@@ -166,4 +166,4 @@ analise4 <- dados_supp %>%
     y = "Crescimento médio (mm)"
   ) +
   theme_estat() +
-  scale_x_discrete()  
+  scale_x_discrete()
