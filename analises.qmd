@@ -11,7 +11,7 @@ source("rdocs/analises.R")
 
 ## Relação entre o crescimento dos dentes e a dose de vitamina C 
 
-Esta análise tem como objetivo compreender o comportamento do crescimento médio dos dentes em função da dose de vitamina C administrada. Para isso, foram utilizadas as variáveis dose de vitamina C e comprimento do dente, sendo a dose classificada como quantitativa discreta e o comprimento como qualitativa. Para ilustrar tal relação, foi construído um gráfico de linhas representando o crescimento médio dos dentes para cada nível de dose analisado.
+Esta análise tem como objetivo compreender o comportamento do crescimento médio dos dentes em função da dose de vitamina C administrada. Para isso, foram utilizadas as variáveis dose de vitamina C e comprimento do dente, sendo a dose classificada como quantitativa discreta e o comprimento como quantitativa contínua. Pra ilustrar tal relação, foi construído um gráfico de linhas representando o crescimento médio dos dentes para cada nível de dose analisado.
 ```{r}
 #| label: fig-analise1
 #| fig-cap: "Gráfico do Crescimento dos Dentes pela Dose de Vitamina C"
@@ -19,12 +19,12 @@ Esta análise tem como objetivo compreender o comportamento do crescimento médi
 analise1
 
 ```
-Tendo em vista a $\ref{fig-analise1}$ de linhas representado, no qual o eixo X represenda a dose de vitamina C em miligramas e o eixo Y que representa o crescimento médio do dente em milímetros,observa-se uma tendência crescente no comprimento médio dos dentes à medida que a dose aumenta. Entre as doses de 0,5 mg e 1,0 mg, verifica-se um aumento mais acentuado no crescimento médio. Esse comportamento sugere que o aumento da dose está associado ao crescimento dos dentes, embora o ganho marginal diminua em doses mais elevadas.
+Tendo em vista a $\ref{fig-analise1}$ de linhas representado, no qual o eixo X represenda a dose de vitamina C em miligramas e o eixo Y que representa o crescimento médio do dente em milímetros,observa-se uma tendência crescente no comprimento médio dos dentes à medida que a dose aumenta. Entre as doses de 0,5 mg e 1,0 mg, verifica-se um aumento mais acentuado no crescimento médio, enquanto de 1,0 mg até 2,0 mg há um crescimento constante. Esse comportamento sugere que o aumento da dose está associado ao crescimento dos dentes, embora o ganho marginal diminua em doses mais elevadas.
 
 
 ## Relação entre dose e crescimento por suplemento
 
-Esta análise tem como objetivo compreender a relação entre a dose de vitamina C e o crescimento dos dentes, considerando o tipo de suplemento utilizado. Para isso, foram utilizadas as variáveis dose de vitamina C (em miligramas), comprimento do dente (em milímetros) e tipo de suplemento, sendo a dose classificada como quantitativa discreta. Para ilustrar essa relação, foi construído um gráfico de dispersão, permitindo observar o comportamento do crescimento dos dentes em função da dose, com diferenciação por tipo de suplemento.
+Esta análise tem como objetivo compreender a relação entre a dose de vitamina C e o crescimento dos dentes, considerando o tipo de suplemento utilizado. Para isso, foram utilizadas as variáveis dose de vitamina C (em miligramas), comprimento do dente (em milímetros) e tipo de suplemento, sendo a dose classificada como quantitativa discreta, comprimento do dente como quantitativa contínua e o tipo de suplemento como qualitativa nominal. Para ilustrar essa relação, foi construído um gráfico de dispersão, permitindo observar o comportamento do crescimento dos dentes em função da dose, com diferenciação por tipo de suplemento.
 
 ```{r}
 #| label: fig-analise2
@@ -38,7 +38,7 @@ Com base na $\ref{fig-analise2}$ de dispersão apresentado, observa-se que, na d
 
 ## Análise distribuição do comprimento por suplemento
  
-Esta análise foi feita com o objetivo de entender como é distribuido o crescimento com base em suplementos diferentes. Para isso, foi utilizado o box plot, que é usado para visualizar a distribuição, dispersão, assimetria e mediana de conjuntos de dados numéricos. Eles são ideais para comparar múltiplos grupos, identificar valores discrepantes (outliers) rapidamente e analisar a variabilidade.
+Esta análise foi feita com o objetivo de entender como é distribuido o crescimento com base em suplementos diferentes. Para isso, foi utilizado o box plot, que é usado para visualizar a distribuição, dispersão, assimetria e mediana de conjuntos de dados numéricos. Eles são ideais para comparar múltiplos grupos, identificar valores discrepantes (outliers) rapidamente e analisar a variabilidade. Para a criação do gráfico, foram utilizadas as variáveis comprimento do dente e tipo de suplemento, que são classificadas como quantitativa contínua e qualitativa nominal, respectivamente.
 
 ```{r}
 #| label: fig-analise3
